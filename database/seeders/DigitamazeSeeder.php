@@ -22,6 +22,7 @@ class DigitamazeSeeder extends Seeder
         //gurus
         DB::table('gurus')->insert([
             'nama' => 'Hartanto',
+            'mapel' => 'biologi',
             'kelamin' => 0,
             'nip' => 200132001,
         ]);

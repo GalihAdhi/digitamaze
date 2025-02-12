@@ -10,7 +10,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Add Class</h5>
+                    <h5 class="modal-title">Add Siswa</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
@@ -70,7 +70,7 @@
         <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createModal">Add Siswa</a>
         <div class="row">
             @foreach ($muriddatas as $murid)
-                <div class="col-md-4 p-3">
+                <div class="col-md-3 p-3">
                     <div class="card shadow-lg rounded-lg border" style="width: 100%;">
                         <img class="card-img-top" src="{{ is_null($murid->foto)&& $murid->kelamin === 1 ? asset('assets/img/femstudimg.jpg') : (is_null($murid->foto)&& $murid->kelamin === 0 ? asset('assets/img/malestudimg.jpg') :  asset('storage/' . $murid->foto  ) )}}">
                         <div class="card-body">
@@ -105,7 +105,7 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title">Add Class</h5>
+                                <h5 class="modal-title">Edit Siswa</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
                             <div class="modal-body">

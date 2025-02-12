@@ -45,7 +45,7 @@
                         <div class="container text-center">
                             <div class="row justify-content-md-center">
                                 <div class="col p-3">
-                                    <a href="{{ route('kelas-info') }}" class="btn btn-primary">View</a>
+                                    <a href="{{ route('kelas-info', $kelas->id) }}" class="btn btn-primary">View</a>
                                 </div>
                                 <div class="col p-3">
                                     <a data-bs-toggle="modal" wire:click="edit({{ $kelas->id }})" data-bs-target="#editModal{{$kelas->id}}" class="btn btn-primary">Edit</a>
