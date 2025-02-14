@@ -20,7 +20,7 @@ class Dashboard extends Component
     return view('livewire.dashboard', [
         'kelasdatas' => Kelas::with(['guru', 'murid'])->paginate(5),
         'gurudatas' => Kelas::has('guru')->with('guru')->paginate(5),
-        'muriddatas' => Kelas::has('murid')->with('murid')->paginate(5),
+        'muriddatas' => Kelas::has('murid')->with('murid.wali')->paginate(5),
     ]);
 }
 

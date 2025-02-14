@@ -11,6 +11,7 @@ use App\Http\Livewire\GuruList;
 use App\Http\Livewire\MuridList;
 use App\Http\Livewire\KelasList;
 use App\Http\Livewire\KelasInfo;
+use App\Http\Livewire\WaliMuridList;
 use GuzzleHttp\Middleware;
 
 /*
@@ -43,4 +44,5 @@ Route::get('muridlist', muridlist::class)->name('manage-siswa');
 Route::get('gurulist', gurulist::class)->name('manage-guru');
 Route::get('kelaslist', kelaslist::class)->name('manage-kelas');
 Route::get('kelasinfo/{kelasid}', kelasinfo::class)->name('kelas-info');
+Route::get('wali-murid', WaliMuridList::class)->name('wali-murid');
 });

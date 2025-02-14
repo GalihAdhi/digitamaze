@@ -78,6 +78,9 @@
                             <p class="card-text">
                                 <strong>NIM:</strong> {{ $murid->nim }} <br>
                                 <strong>Kelamin:</strong> {{ $murid->kelamin == 1 ? 'Perempuan' : 'Laki-laki' }} <br>
+                                @if($murid->wali)
+                                <strong>wali:</strong> {{ $murid->wali->nama}} <br>
+                                @endif
                                 <strong>Kelas:</strong> 
                                 @if($murid->kelas->isNotEmpty())
                                     @foreach($murid->kelas as $kelas)

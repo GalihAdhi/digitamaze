@@ -30,7 +30,7 @@ class MuridList extends Component
 
     public function mount()
     {
-        $this->muriddatas= Murid::all();
+        $this->muriddatas= Murid::with('wali')->get();
         $this->kelasdatas= Kelas::all();
     }
 

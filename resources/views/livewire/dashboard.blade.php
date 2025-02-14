@@ -129,7 +129,7 @@
                 <div class="card my-4">
                     <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                         <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
-                            <h6 class="text-white text-capitalize ps-3">List Guru per Kelas</h6>
+                            <h6 class="text-white text-capitalize ps-3">List Murid per Kelas</h6>
                         </div>
                     </div>
                     <div class="card-body px-0 pb-2">
@@ -159,7 +159,7 @@
                                                     </div>
                                                     <div class="d-flex flex-column justify-content-center">
                                                         <h6 class="mb-0 text-sm">{{ $murid->nama }}</h6>
-                                                        <p class="text-xs font-weight-bold mb-0">{{ $murid->mapel }}</p>
+                                                        <p class="text-xs font-weight-bold mb-0">{{ $murid->wali->nama }}</p>
                                                         <span class="badge badge-sm bg-gradient-success">{{ $murid->nip }}</span>
                                                     </div>
                                                 </div>

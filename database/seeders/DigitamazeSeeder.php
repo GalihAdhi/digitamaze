@@ -45,5 +45,10 @@ class DigitamazeSeeder extends Seeder
             'id_kelas' => 1,
             'id_guru' => 1,
         ]);
+
+        DB::table('wali_murids')->insert([
+            'nama' => 'Pri',
+            'id_murid' => 1,
+        ]);
     }
 }

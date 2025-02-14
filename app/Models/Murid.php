@@ -15,6 +15,12 @@ class Murid extends Model
         return $this->belongsToMany(Kelas::class, 'kelas_murids', 'id_murid', 'id_kelas');
     }
 
+    public function wali()
+    {
+        return $this->hasOne(WaliMurid::class, 'id_murid', 'id');
+    }
+
+
     protected $fillable = [
         'nama',
         'nim',
